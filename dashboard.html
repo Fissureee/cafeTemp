@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="logo"><img src="icons/kiwi-bird-solid.svg" alt="kiwi-logo" height="50px" width="50px"><h1 class="logo">Kiwi Cafe</h1></li>
+            <li><img src="icons/home.svg" alt="logo" height="30px" width="30px"><a href="dashboard.html" class="menu">Home</a></li>
+            
+            <li><img src="icons/users.svg" alt="logo" height="30px" width="30px"><a href="users.html" class="menu">Users</a></li><!-- admin nav -->
+            
+            <li><img src="icons/coffee.svg" alt="logo" height="30px" width="30px"><a href="menu.html" class="menu">Menu</a></li><!-- manager nav -->
+            <li><img src="icons/clipboard.svg" alt="logo" height="30px" width="30px"><a href="transaction.html" class="menu">Transaction</a></li><!-- manager nav -->
+            
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <h1>Admin, Angus</h1>
+            <form method="POST"><button type="submit" name="logout" class="logout-btn" value="logout">Logout</button></form>
+        </div>
+
+        <div class="container">
+            <div class="grid-box">
+                <div class="data-grid users-grid">
+                    <h2>Users</h2>
+                    <h2>10</h2>
+                    <a href="users.html">View Details ></a>
+                </div>
+                <div class="data-grid menus-grid">
+                    <h2>Menus</h2>
+                    <h2>14</h2>
+                    <a href="menu.html">View Details ></a>
+                </div>
+                <div class="data-grid transactions-grid">
+                    <h2>Transactions</h2>
+                    <h2>12</h2>
+                    <a href="transaction.html">View Details ></a>
+                </div>
+                <div class="data-grid users-grid">
+                    <h2>10 Users</h2>
+                    <a href="#">View Details ></a>
+                </div>
+                <div class="data-grid users-grid">
+                    <h2>10 Users</h2>
+                    <a href="#">View Details ></a>
+                </div>
+                <div class="data-grid users-grid">
+                    <h2>10 Users</h2>
+                    <a href="#">View Details ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

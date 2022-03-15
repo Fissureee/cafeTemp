@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="logo"><img src="icons/kiwi-bird-solid.svg" alt="kiwi-logo" height="50px" width="50px"><h1 class="logo">Kiwi Cafe</h1></li>
+            <li><img src="icons/home.svg" alt="logo" height="30px" width="30px"><a href="dashboard.html" class="menu">Home</a></li>
+            <li><img src="icons/users.svg" alt="logo" height="30px" width="30px"><a href="users.html" class="menu">User</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <h1>Admin, Angus</h1>
+            <form method="POST"><button type="submit" name="logout" class="logout-btn" value="logout">Logout</button></form>
+        </div>
+
+        <div class="container">
+
+            <h1 class="table-title">Users Table</h1>
+
+            <div class="crud-table">
+                <a href="#" class="add"> + Add New User</a>
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Level</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Angus</td>
+                            <td>angus</td>
+                            <td>21</td>
+                            <td>Male</td>
+                            <td>Jl. Manggis no. 1</td>
+                            <td>0812212121</td>
+                            <td>Admin</td>
+                            <td>
+                                <div class="action-col">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="delete">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

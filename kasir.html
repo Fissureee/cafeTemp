@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="logo"><img src="icons/kiwi-bird-solid.svg" alt="kiwi-logo" height="50px" width="50px"><h1 class="logo">Kiwi Cafe</h1></li>
+            <li><img src="icons/home.svg" alt="logo" height="30px" width="30px"><a href="kasir.html" class="menu">Home</a></li>
+            <li><img src="icons/clipboard.svg" alt="logo" height="30px" width="30px"><a href="transaction.html" class="menu">Transaction</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <h1>Kasir, Dan</h1>
+            <form method="POST"><button type="submit" name="logout" class="logout-btn" value="logout">Logout</button></form>
+        </div>
+
+        <div class="container">
+
+            <div class="dash-kasir">
+                <div class="price-tag">
+
+                        <div class="detail-table">
+                            <table>
+                                <thead>
+                                    <th>No</th>
+                                    <th>Menu</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Americano</td>
+                                        <td>2</td>
+                                        <td>Rp 9000</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <h1>Total Bayar: Rp 9000</h1>
+                        <form method="post">
+                            <button type="submit" class="finish-btn" name="pesanan" value="id_user">Selesaikan Pesanan</button>
+                            <br />
+                            <button type="submit" class="finish-btn" name="cancel" value="id_transaksi">Batalkan Pesanan</button>
+                        </form>
+                </div>
+
+                    <div class="order-box">
+                        
+                        <form method="POST">
+                            <div class="data-grid menu-grid drink">
+                                <p>Americano</p>
+                                <p>Harga: Rp 4500</p>
+                                <p>Stok: 12</p>
+                                <div class="order-buttons">
+                                <p>Jumlah: <input type="number" name="jumlah" max="12" min="0"></p>
+                                <input type="hidden" name="menu" value="id">
+                                <button type="submit" name="order" class="order-btn" value="id">Order</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <form method="POST">
+                            <div class="data-grid menu-grid food">
+                                <p>Chips</p>
+                                <p>Harga: Rp 6000</p>
+                                <p>Stok: 10</p>
+                                <div class="order-buttons">
+                                <p>Jumlah: <input type="number" name="jumlah" max="10" min="0"></p>
+                                <input type="hidden" name="menu" value="id">
+                                <button type="submit" name="order" class="order-btn" value="id">Order</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
